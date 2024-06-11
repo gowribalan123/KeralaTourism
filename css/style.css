@@ -2,20 +2,21 @@
     margin: 0 auto;
     border: 0px solid #dcc2c2;
     padding: 0px;
-  
-}
-    /*background-image: url("../images/bg8.jpg");
+/*
+    background-image: url("../images/bg11.webp");
     
     background-repeat: no-repeat;
-    background-position: center;*/
+    background-position: center;
 
-header{background-color: white;}
-main{background-color: white;}
+ */
 
- 
-body {
+}
+
+
+    body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+ 
 }
 div{    
   margin:6x;
@@ -25,6 +26,7 @@ div{
  
 
 .navbar {
+  font-size:medium;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,9 +50,25 @@ div{
   list-style: none;
   padding: 0;
 }
+.topdestinations img
+{
+  padding: 2px;
+  width: 200px;
+  height: 100px;
+  margin: 2px;
+  gap: 30px;
+}
   
+  .topdestinations table p
+  {
+    font-size: 20px;
+    font-weight: 200;
+    padding: 3px;
+    text-align: center  ;
+    color:midnightblue;
   
-  
+
+  }
   
     
   
@@ -63,11 +81,12 @@ div{
 }
 
 .logo img {
-  width: 180px;
-  border-radius: 50px;
+  width: 150px;
+  border-radius: 75px;
 }
 
 .nav-list li {
+  
   list-style: none;
   padding: 26px 30px;
   padding: 10px;
@@ -236,6 +255,7 @@ img {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  
 }
 /* Footer styles */
 footer {
