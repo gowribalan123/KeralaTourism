@@ -30,10 +30,10 @@
                     <nav  >
                     <div class="rightnav">
                          <ul  class="nav-list">
-                            <li ><a href="index.html" >Home</a></li>
+                            <li ><a href="#" >Home</a></li>
                             
-                            <li ><a href="districts.html">Districts</a></li>
-                            <li><a href="aboutus.html" >About Us</a></li>
+                            <li ><a href="#districts">Districts</a></li>
+                            <li><a href="#aboutus" >About Us</a></li>
                             <button style="border-radius: 50PX;width: 75px;height: 30px;" >Login</button>
                          <button style="border-radius: 50PX;width: 75px;height: 30px;" >Sign Up</button>
                          </ul>
@@ -53,7 +53,7 @@
                    the world.
 
             
-            <a href="#aboutus" class="text-small" style="text-decoration: none; color: white;">Learn More...</a>
+            <a href="#aboutus" style="text-decoration: none; color: white;">Read more...</a>
         </p>
             <a href="#contactus" class="text-small" style="color: white;  border-radius: 50px; text-decoration: none;text-align: center;background: black; padding: 10px;" >Contact Us</a>
             <hr>
@@ -107,7 +107,7 @@
                     </td>
                 </tr>
             </table>
-         <p><a href="#" style="text-decoration: none; color: white;padding: 10px;">Read more..</a></p>
+         <p><a href="topdestinations.html" style="text-decoration: none; color: white;padding: 10px;">Read more..</a></p>
         
     </section>
     <hr>
@@ -155,12 +155,11 @@
             <li>   <a href="Kollam.html"> <img src="images/Kollam.jpg"  alt="" >Kollam</a>  </li>
             <li>   <a href="Pathanamthitta.html"> <img src="images/pathanamthitta.jpg"  alt="" >Pathanamthitta  </a> </li>
 
-           
-            
-            
         </ol>
+        <a href="districts.html" style="text-decoration: none;color: white; margin: 10px;;  ">Read more..</a>
+              
     </section>
-       <hr>
+       <hr> 
     
     <section id="contactus" >
         
@@ -168,19 +167,28 @@
             <form action="#" method="get"  class="form-control">
                 <h1 class="text-big" >Contact Us</h1>
         <label for="Name">Name</label>
+        <!--
         <input type="text" name="name" id="name" maxlength="20"  pattern="[a-zA-Z\s]+" placeholder="Please enter only letters and whitespaces" required ><br>
-        <label for="email">Email</label>
+       -->
+       <input type="text" name="name" id="name" maxlength="20"  pattern="[a-zA-Z\s]{1,20}" placeholder="Please enter only letters and whitespaces" required ><br>
+    
+         <label for="email">Email</label>
         <input type="email" name="email" id="email" placeholder="eg:abc@gmail.com" required ><br>
         <label for="phone">Phone Number</label>
       <!-- <input type="number" name="phone" id="phone" minlength="10" maxlength="10" placeholder="Please enter a 10 digit mobile number" required><br>
        
         <input type="number" name="phone" id="phone"  placeholder="Please enter a 10 digit mobile number" pattern="^[0-9]{10}$" required><br>
-        -->  
+     
         <input name="ContactNumber" required="required" type="number" placeholder="Please enter 10 digit mobile number"  id="phone" max="9999999999" min="1000000000"  ><br>
+        
+           -->  
+           <input type="tel" name="phone" id="phone"  placeholder="Please enter a 10 digit mobile number" pattern="\d{10}" required><br>
+     
         <label for="districts"  >Districts</label>
             <select name="districts"  >
             <!--    <option value="select">Select a District</option>
                  -->
+                 <option value="ala">Select District</option>
                 <option value="ala">Alappuzha</option>
                 <option value="thiru">Thiruvanthapuram</option>
                 <option value="kott">Kottayam</option>
