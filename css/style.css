@@ -2,6 +2,7 @@
     margin: 0 auto;
     border: 0px solid #dcc2c2;
     padding: 0px;
+    
 /*
     background-image: url("../images/bg11.webp");
     
@@ -16,6 +17,8 @@
     body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  background: linear-gradient(90deg,#c50e0e,#dfda56);
+  
  
 }
 div{    
@@ -95,11 +98,13 @@ div{
   padding: 10px;
   margin-right: 20px;
   font-family:Arial, Helvetica, sans-serif;
+  
 }
 
 .nav-list li a {
   text-decoration: none;
   color: white;
+  
 }
 
 .nav-list li a:hover {
@@ -290,7 +295,25 @@ footer {
   margin-bottom: 25px;
  
 }
-
+.dist
+{list-style: none;
+  text-decoration: none;
+}
+.dist li a
+{
+  color: rgb(17, 13, 28); 
+  text-decoration: none;
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:larger;
+}
+.dist li img
+{
+  border-radius: 20px;
+  width: 100px;
+  height: 70px;
+  padding: 2px;
+  margin: 30px;
+}
 /* Styling form-control Label */
 .form-control label {
   display: block;
