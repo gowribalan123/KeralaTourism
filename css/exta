@@ -1,0 +1,147 @@
+
+@media only screen and (max-width: 750px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.menu-icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media only  screen and (max-width: 750px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .menu-icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+     .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+
+
+  @media only screen and (max-width:750px)
+  {
+    nav ul{
+      width:100%;
+      position:absolute;
+      top:75px;
+      right:0;
+      z-index: 2;
+    }
+    nav ul li{
+
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: none;
+    }
+    nav ul li a {
+
+      color: #fff;
+    }
+    .menu-icon{
+      display:block;
+    }
+    .nav-list{
+      overflow: hidden;
+      transition: 0.55;
+    }
+    .btn-sm1{
+      display: none;
+    }
+    .btn-sm2{
+      display: none;
+    }
+    
+    .about h1{
+      font-size:medium;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      padding: 15px;
+      cursor: pointer;
+    }
+    .row{
+    flex-direction: column-reverse;
+    margin: 15px 0;
+  }
+  .col
+  {width:100%;
+  flex-basis: 100%;
+  margin-bottom: 50px;
+  font-size: 15px;
+  }
+   .box
+  {
+  flex-basis: 100%;
+  margin-bottom: 50px;
+  font-size: 15px;
+  }
+  body{
+    background-repeat:repeat;
+  }
+    }
+    
+@media (max-width: 750px) {
+  .header {
+    padding: 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}}
+  
+@media only screen and (max-width: 550px) {
+    html {
+      
+  display: block;
+  position:absolute;
+  
+      font-size: 75%;
+      scroll-padding-top: 7rem;
+      
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+  }}
+@media only screen and (max-width:750px)
+  {
+   header .navbar .rightnav .nav-list ul li a:not(:first-child) {display: none;}
+   header .navbar .rightnav .nav-list ul li a.menu-icon {
+      float:right;
+      display: block;
+       
+
+    }
+   
+    *, *:before, *:after {
+    display: block; 
+    float:right;
+    
+  }}
+@media only screen and (max-width: 300px) {
+  html {
+    background-repeat:no-repeat;
+display: block;
+position:absolute;
+
+    font-size: 75%;
+    scroll-padding-top: 7rem;
+    width:500px;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+.button .topdesbtn{
+  justify-content: center;
+  text-align: center;
+}
+}
