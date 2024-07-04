@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 *{
   max-width: 750px;
     margin: 0 auto;
@@ -9,13 +13,37 @@
     box-sizing: border-box;
     font-family:'Poppins','sans-serif';
     text-decoration: none;
+    -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          text-transform: capitalize;
+          -webkit-transition: .2s linear;
+          transition: .2s linear;
+          border: none;
 /*
     background-image: url("../images/bg11.webp");
     
     background-repeat: no-repeat;
     background-position: center;
 
- */
+ */}
+ html {
+  
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #10221b;
+}
 .menu-icon{
   display: none;
 }
@@ -267,7 +295,7 @@
       font-size: 20px;    
       vertical-align: middle;
 }
-
+ 
 #btncontactus {
   width: 160px;
   border-radius: 20PX;
@@ -666,8 +694,8 @@ select {
   display: block;
   font-size: 35px;
   padding-left: 5px;
-  padding-right: 5px;
-  margin-right: 5px;
+  padding-right: 10px;
+  margin-right: 10px;
   margin-left: 5px;
 }
 }
@@ -686,12 +714,13 @@ select {
   
 }
 
-  *::before {
+  *::after,*::before {
     content: "";
     position: absolute;
-    left: 20%;
+    left: 10%;
+    right: 10%;
     bottom: 16px;
-    width: 150px;
+    width: 100px;
     height: 14px;
     transform: skew(-12deg) translateX(-50%);
    text-align: center;
@@ -776,15 +805,50 @@ select, textarea */
 .btn-sm2{
   display: none;
 }}
-
-@media only screen and(max-width:460px) and (max-width:750px)
+@media only screen and(max-width:460px) and (max-width:576px)
+{
+  *::after,*::before {
+    content: "";
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 16px;
+    width: 150px;
+    height: 14px;
+    
+   text-align: center;
+   justify-content: center;
+    z-index: -1;
+}
+  .html{
+    font-size: 50%;
+    width:90vw;
+  }
+}
+@media only screen and(max-width:576px) and (max-width:768px)
 {
   #aboutus .ker1 p{
 font-size: 25px;
   }
-
+  *::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+  
+    bottom: 16px;
+    width: 10%;
+    height: 14px;
+     
+   text-align: center;
+   justify-content: center;
+    z-index: -1;
+}
+  .html{
+    font-size: 50%;
+    width:90vw;
+  }
 }  
-@media only screen  and (max-width:750px)
+@media only screen  and (max-width:768px)
 {
   .menu-icon{
     display:block;
